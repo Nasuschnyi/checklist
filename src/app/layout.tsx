@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './styles/globals.scss';
 import { Suspense } from 'react';
 import Loading from './loading';
+import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -16,7 +17,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body>
-				<Suspense fallback={<Loading />}>{children}</Suspense>
+				<Suspense fallback={<Loading />}>
+					<header className="header">
+						<Navbar />
+					</header>
+					{children}
+				</Suspense>
 			</body>
 		</html>
 	);

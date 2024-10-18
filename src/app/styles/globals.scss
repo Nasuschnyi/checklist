@@ -1,6 +1,12 @@
 @import './fonts';
 @import './reset';
 @import './variables';
+@import './components/navbar.scss';
+@import './components/UI/logo.scss';
+
+body {
+	background: map-get($color, 'black');
+}
 
 h1 {
 	font-family: 'Montserrat';

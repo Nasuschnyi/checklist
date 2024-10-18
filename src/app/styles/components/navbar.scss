@@ -1,0 +1,7 @@
+@import '../variables';
+
+.navbar {
+	display: flex;
+	width: min(100% - 1rem, 1720px);
+	margin-inline: auto;
+}
